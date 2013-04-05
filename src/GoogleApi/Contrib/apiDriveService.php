@@ -135,7 +135,7 @@ class apiDriveService extends Service {
    *
    * @param Client Client
    */
-  public function __construct(Client $Client) {
+  public function __construct(\GoogleApi\Client $Client) {
     $this->rpcPath = '/rpc';
     $this->restBasePath = '/drive/v1/';
     $this->version = 'v1';
